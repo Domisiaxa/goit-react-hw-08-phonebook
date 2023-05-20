@@ -11,6 +11,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+import css from './RegisterForm.module.css';
+
 import { useNavigate } from 'react-router-dom';
 
 import { register } from 'redux/auth/auth.thunk';
@@ -84,11 +86,12 @@ export default function SignUp() {
                   required
                   fullWidth
                   name="password"
-                  label="Password (7 symbols)"
+                  label="Password"
                   type="password"
                   id="password"
                   autoComplete="new-password"
                 />
+                <p className={css.p}>Password should contain 7 symbols</p>
               </Grid>
             </Grid>
             <Button

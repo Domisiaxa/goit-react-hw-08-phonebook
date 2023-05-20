@@ -7,3 +7,10 @@
   flex-direction: column;
   margin-bottom: 16px;
 }
+
+.p {
+  padding-left: 16px;
+  margin: 0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
